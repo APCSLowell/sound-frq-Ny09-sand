@@ -25,7 +25,7 @@ public class Sound
           adjucate++; 
         } 
       } 
-    return count; 
+    return adjucate; 
       } 
 
 
@@ -41,9 +41,9 @@ public class Sound
     while (samples[k]==0){
       k++;
     } 
-    int newSamples=new int[samples.length-k]; 
+    int [] newSamples=new int[samples.length-k]; 
     for (int i = 0 ; i< newSamples.length;i++) {
-      newSamples[i]=samples[i=n]; 
+      newSamples[i]=samples[i+k]; 
     } 
     samples=newSamples; 
   }
